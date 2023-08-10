@@ -13,7 +13,11 @@ function randomHands() {
 }
 
 function play() {
+    player1.style.backgroundColor = "#fff";
+    player2.style.backgroundColor = "#fff";
   if (player1.textContent === player2.textContent) {
+    player1.style.backgroundColor = "#000";
+    player2.style.backgroundColor = "#000";
     return (result.textContent = "It's a Tie!");
   } else {
     if (
@@ -21,8 +25,10 @@ function play() {
       (player1.textContent === "✌️" && player2.textContent === "🤚") ||
       (player1.textContent === "🤚" && player2.textContent === "✊")
     ) {
+      player1.style.backgroundColor = "#000";
       return (result.textContent = "Player 1 wins !!!");
     } else {
+      player2.style.backgroundColor = "#000";
       return (result.textContent = "Player 2 wins !!!");
     }
   }
