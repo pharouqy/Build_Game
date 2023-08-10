@@ -57,6 +57,22 @@ button:hover {
 }
 
 aside > h2 {
-    width: 200px;
-    text-align: center;
+  width: 200px;
+  text-align: center;
+}
+
+@media all and (max-width: 375px) {
+    h1 {
+        text-align: center;
+    }
+    div > aside {
+        margin: 0;
+    }
+    main > div {
+        flex-direction: column;
+        width: unset;
+    }
+    main {
+        height: 100%;
+    }
 }
