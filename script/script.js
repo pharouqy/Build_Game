@@ -32,7 +32,10 @@ function handlePlay() {
   const btn = document.getElementById("btn");
   btn.addEventListener("click", (e) => {
     e.preventDefault();
-    randomHands();
-    play();
+    result.textContent = "Suspense... !!!";
+    setTimeout(() => {
+      randomHands();
+      play();
+    }, 3000);
   });
 }
