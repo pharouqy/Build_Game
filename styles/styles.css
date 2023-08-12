@@ -54,6 +54,13 @@ button {
 
 button:hover {
   cursor: pointer;
+  transform: scale(1.2);
+  box-shadow: 5px 2px 3px #000;
+  transition: transform 0.5s;
+}
+
+button:active {
+  transform: scale(1.1);
 }
 
 aside > h2 {
@@ -61,22 +68,23 @@ aside > h2 {
   text-align: center;
 }
 
-h2#player1, h2#player2 {
+h2#player1,
+h2#player2 {
   font-size: 3.5em;
 }
 
 @media all and (max-width: 425px) {
-    h1 {
-        text-align: center;
-    }
-    div > aside {
-        margin: 0;
-    }
-    main > div {
-        flex-direction: column;
-        width: unset;
-    }
-    main {
-        height: 100%;
-    }
+  h1 {
+    text-align: center;
+  }
+  div > aside {
+    margin: 0;
+  }
+  main > div {
+    flex-direction: column;
+    width: unset;
+  }
+  main {
+    height: 100%;
+  }
 }
